@@ -1,6 +1,4 @@
 .container {
-  padding-right: 3em;
-  padding-left: 3em;
   margin: 0 auto;
 }
 
@@ -23,12 +21,11 @@
 }
 
 .container-full {
-  padding-right: 3em;
-  padding-left: 3em;
+  width: 100%;
   margin: 0 auto;
 }
 
-.container-padded {
+.wrapper {
   padding-top: 3em;
   padding-bottom: 1em;
 }
