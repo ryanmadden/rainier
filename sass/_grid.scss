@@ -3,20 +3,24 @@
 }
 
 // TODO replace media queries with mixins
-// TODO replace pixel widths with em breakpoints
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .container {
-    width: 750px;
+    width: 46em;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 62em) {
   .container {
-    width: 970px;
+    width: 60em;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 75em) {
   .container {
-    width: 1170px;
+    width: 73em;
+  }
+}
+@media (min-width: 87.5em) {
+  .container {
+    width: 85em;
   }
 }
 
