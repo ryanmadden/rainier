@@ -2,27 +2,29 @@
 
 .container {
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 // TODO replace media queries with mixins
 @media (min-width: 48rem) {
   .container {
-    width: 46rem;
+    width: 45rem;
   }
 }
 @media (min-width: 62rem) {
   .container {
-    width: 60rem;
+    width: 59rem;
   }
 }
 @media (min-width: 75rem) {
   .container {
-    width: 73rem;
+    width: 72rem;
   }
 }
 @media (min-width: 87.5rem) {
   .container {
-    width: 85rem;
+    width: 84rem;
   }
 }
 
@@ -37,7 +39,10 @@
 }
 
 .row {
-  margin-bottom: 15px;
+}
+
+.clm {
+  margin-bottom: 0.8rem;
 }
 
 .row:before,.row:after {
@@ -47,10 +52,17 @@
 }
 
 .colorful {
-  background-color: grey;
+  background-color: $color-secondary;
+  color: $color-text-primary;
   width: 100%;
-  height: 20px;
-  border: 1px solid black;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 0.8rem;
+
+  > p {
+    margin-bottom: 0;
+    padding: 2px 0 2px 0;
+  }
 }
 
 
