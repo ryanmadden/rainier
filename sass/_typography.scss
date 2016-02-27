@@ -1,3 +1,5 @@
+@import 'vars';
+
 body {
   color: black;
   font-family: 'Helvetica';
@@ -27,3 +29,87 @@ body {
 
 .text-right { text-align: right; }
 
+a {
+  color: $color-text-primary;
+  text-decoration: none;
+  border-bottom: 1px dotted $color-text-primary;
+
+  &:hover {
+    color: $color-text-secondary;
+    text-decoration: none;
+    border-bottom: 1px dotted $color-text-secondary;
+  }
+}
+
+strong, b {
+  color: $color-text-primary;
+  font-weight: $font-weight-bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $color-text-primary;
+  font-weight: $font-weight-bold;
+  line-height: 1.5em;
+  margin: 0 0 1em 0;
+}
+
+h1 {
+  font-size: 2.1em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.8em;
+}
+
+sub {
+  font-size: 0.8em;
+  position: relative;
+  top: 0.5em;
+}
+
+sup {
+  font-size: 0.8em;
+  position: relative;
+  top: -0.5em;
+}
+
+blockquote {
+  border-left: 1px solid $color-text-primary;
+  font-style: italic;
+}
+
+code {
+  font-size: 0.9em;
+  margin: 0 0.25em;
+  padding: 0.25em 0.65em;
+}
+
+hr {
+  margin: 2em 0;
+  border: 0;
+  border-bottom: 2px solid $color-text-secondary;
+}
