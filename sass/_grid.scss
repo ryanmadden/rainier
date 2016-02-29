@@ -30,7 +30,8 @@
 
 .container-full {
   width: 100%;
-  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .wrapper {
@@ -50,21 +51,6 @@
   content: " ";
   clear: both;
 }
-
-.colorful {
-  background-color: $color-secondary;
-  color: $color-text-primary;
-  width: 100%;
-  text-align: center;
-  border-radius: 3px;
-  font-size: 0.8rem;
-
-  > p {
-    margin-bottom: 0;
-    padding: 2px 0 2px 0;
-  }
-}
-
 
 .xs-1,
 .xs-2,

@@ -6,15 +6,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
   <link rel="stylesheet" type="text/css" href="css/rainier.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body class="">
   <header class="text-center">
     <h1>Welcome</h1>
+    <p>Rainier feels like a pile of puppies.</p>
   </header>
+  <section>
+    <div class="container">
+      <h3>Container</h3>
+      <p>Slapping the <code>container</code> class on a <code>&lt;div&gt;</code> gets you a fixed width container that adjusts for every breakpoint. If you're looking for a full-width wrapper then the <code>container-full</code> class will get the job done.</p>
+      <pre class="prettyprint"><code>&lt;!-- Fixed width at each breakpoint --&gt;<br>&lt;div class="container"&gt;<br>   ...<br>&lt;/div&gt;<br><br>&lt;!-- Fluid container at all widths --&gt;<br>&lt;div class="container-full  "&gt;<br>   ...<br>&lt;/div&gt;</code></pre>
+    </div>
+  </section>
   <section class="grid-demo">
     <div class="container">
-      <h4>Text</h4>
+      <h3>Grid</h3>
+      <p>It's a twelve-column grid. You know this. Make rows with the <code>row</code> class and columns with the <code>clm</code> class. You can add classes like <code>xs-8</code> and <code>xl-4</code> to adapt columns at each of the five breakpoints. Gutters are <code>15px</code> by default.</p>
       <div class="row">
         <div class="clm xs-12 sm-1">
           <div class="colorful">
@@ -147,99 +158,115 @@
           </div>
         </div>
       </div>
+      <pre class="prettyprint"><code>&lt;!-- Organize columns inside rows --&gt;<br>&lt;div class="row"&gt;<br>   &lt;!-- Colmns can have different widths at each breakpoint --&gt;<br>   &lt;div class="clm xs-12 sm-11 md-6 lg-4 xl-2"&gt;&lt;/div&gt;<br>   &lt;div class="clm xs-12 sm-1 md-6 lg-8 xl-10"&gt;&lt;/div&gt;<br>&lt;/div&gt;</code></pre>
     </div>
   </section>
   <section>
     <div class="container">
-      <h4>Text</h4>
-      <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-        This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-        This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-        <hr>
-        <header>
-          <h4>Heading with a Subtitle</h4>
-          <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-        </header>
-        <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-        <header>
-          <h5>Heading with a Subtitle</h5>
-          <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-        </header>
-        <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-        <hr>
-        <h1>Heading Level 1</h1>
-        <h2>Heading Level 2</h2>
-        <h3>Heading Level 3</h3>
-        <h4>Heading Level 4</h4>
-        <h5>Heading Level 5</h5>
-        <h6>Heading Level 6</h6>
-        <hr>
-        <h5>Blockquote</h5>
-        <blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-        <h5>Preformatted</h5>
-        <pre><code>i = 0;
-
-          while (!deck.isInOrder()) {
-          print 'Iteration ' + i;
-          deck.shuffle();
-          i++;
-        }
-
-        print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <h4>Table</h4>
-        <h5>Default</h5>
-        <div class="table-wrapper">
-          <table>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Price</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Item One</td>
-                <td>Ante turpis integer aliquet porttitor.</td>
-                <td>29.99</td>
-              </tr>
-              <tr>
-                <td>Item Two</td>
-                <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                <td>19.99</td>
-              </tr>
-              <tr>
-                <td>Item Three</td>
-                <td> Morbi faucibus arcu accumsan lorem.</td>
-                <td>29.99</td>
-              </tr>
-              <tr>
-                <td>Item Four</td>
-                <td>Vitae integer tempus condimentum.</td>
-                <td>19.99</td>
-              </tr>
-              <tr>
-                <td>Item Five</td>
-                <td>Ante turpis integer aliquet porttitor.</td>
-                <td>29.99</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td colspan="2"></td>
-                <td>100.00</td>
-              </tr>
-            </tfoot>
-          </table>
+      <h3>Typography</h3>
+      <p>Type is based on responsive units, with the <code>html</code> font-size property set at <code>16px</code>. Out of the box, Rainier bumps the font-size of the <code>body</code> element to <code>17px</code> and <code>18px</code> at the large and extra-large breakpoints, respectively.</p>
+      <p>Thanks to those responsive units, this scales the type of the entire page on those large displays. If that's not your flavor, you can change the font-size at those breakpoints or delete those rules entirely.</p>
+      <div class="row">
+        <div class="clm xs-12 sm-6">
+          <h4>Styles</h4>
+          <p>We've got all your favorite type styles, including <b>bold</b>, <strong>strong</strong>, <i>italic</i>, and <em>emphasized</em>. There's your garden variety <u>underlined</u> and <code>console.log('code');</code>, and even some <a href="#">links</a>. You know, for linking.</p>
+          <p>If you like lists, list away:</p>
+          <div class="row">
+            <div class="clm xs-6">
+              <ol>
+                <li>There's</li>
+                <li>Ordered</li>
+                <li>Lists</li>
+              </ol>
+            </div>
+            <div class="clm xs-6">
+              <ul>
+                <li>And</li>
+                <li>Unordered</li>
+                <li>Lists</li>
+              </ul>
+            </div>
+          </div>
         </div>
-
+        <div class="clm xs-12 sm-6">
+          <h4>Headings</h4>
+          <h1>Heading 1 <code>&lt;h1&gt;</code></h1>
+          <h2>Heading 2 <code>&lt;h2&gt;</code></h2>
+          <h3>Heading 3 <code>&lt;h3&gt;</code></h3>
+          <h4>Heading 4 <code>&lt;h4&gt;</code></h4>
+          <h5>Heading 5 <code>&lt;h5&gt;</code></h5>
+          <h6>Heading 6 <code>&lt;h6&gt;</code></h6>
+        </div>
       </div>
-    </section>
-    <footer>
-    </footer>
-  </body>
-  </html>
+      <h4>Heading Subtitles</h4>
+      <p>When a <code>&lt;p&gt;</code> tag follows a heading inside a <code>&lt;header&gt;</code> tag it is converted into a subheading:</p>
+      <header>
+        <h5>This Heading Has a Subtitle</h5>
+        <p>And what an amazing subtitle it is</p>
+      </header>
+      <pre class="prettyprint"><code>&lt;header&gt;<br>   &lt;h5&gt;This Heading Has a Subtitle&lt;/h5&gt;<br>   &lt;p&gt;And what an amazing subtitle it is&lt;/p&gt;<br>&lt;/header&gt;</code></pre>
+      <h4>Blockquote</h4>
+      <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam gravida et mi vel dapibus. Etiam sit amet nisi maximus, dictum mauris pharetra, lacinia mauris. Vivamus et enim at massa facilisis consequat sit amet non enim. Nunc tincidunt libero nibh, sit amet fermentum tortor dignissim ut.</blockquote>
+      <pre class="prettyprint"><code>&lt;blockquote&gt;<br>   Lorem ipsum dolor sit amet...<br>&lt;/blockquote&gt;</code></pre>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h3>Buttons</h3>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h4>Tables</h4>
+      <h5>Default</h5>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Item One</td>
+              <td>Ante turpis integer aliquet porttitor.</td>
+              <td>29.99</td>
+            </tr>
+            <tr>
+              <td>Item Two</td>
+              <td>Vis ac commodo adipiscing arcu aliquet.</td>
+              <td>19.99</td>
+            </tr>
+            <tr>
+              <td>Item Three</td>
+              <td> Morbi faucibus arcu accumsan lorem.</td>
+              <td>29.99</td>
+            </tr>
+            <tr>
+              <td>Item Four</td>
+              <td>Vitae integer tempus condimentum.</td>
+              <td>19.99</td>
+            </tr>
+            <tr>
+              <td>Item Five</td>
+              <td>Ante turpis integer aliquet porttitor.</td>
+              <td>29.99</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2"></td>
+              <td>100.00</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+    </div>
+  </section>
+  <footer>
+  </footer>
+</body>
+</html>
