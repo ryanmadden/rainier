@@ -1,8 +1,9 @@
 @import 'vars';
 
 body {
-  color: black;
-  font-family: 'Helvetica';
+  color: $color-text-primary;
+  font-family: 'Montserrat', 'Helvetica';
+  font-weight: $font-weight-normal;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.65;
