@@ -25,7 +25,7 @@ body {
 
 }
 
-a {
+a:not(.btn) {
   color: $color-primary-contrast;
   text-decoration: none;
   border-bottom: 1px dotted $color-primary-contrast;
