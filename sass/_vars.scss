@@ -1,15 +1,39 @@
-// Color
-$color-primary:        rgb(46, 56, 66);
-$color-secondary:      rgb(238, 238, 238);
-$color-contrast:       rgb(255, 255, 255);
-$color-action:         rgb(237, 73, 51);
-$color-accent:         rgb(33, 178, 166);
-$color-text-primary:   rgb(78, 72, 82);
-$color-text-secondary: rgb(142, 136, 146);
+// Utility Colors
+$color-white: rgb(255, 255, 255);
+$color-white-translucent: rgba(255, 255, 255, 0.7);
+$color-grey-purple: rgb(78, 72, 82);
+$color-grey-dark: rgb(142, 136, 146);
+$color-grey-light: rgb(238, 238, 238);
+$color-orange-action: rgb(237, 73, 51);
+$color-purple-blue: rgb(80, 83, 147);
+$color-aquamarine: rgb(33, 178, 166);
+
+// Theme Colors
+$color-primary: $color-white; // The main background color
+$color-secondary: $color-grey-light; // The secondary background color
+$color-tertiary: $color-purple-blue; // The tertiary background color
+$color-action: $color-orange-action; // A color to capture attention
+$color-accent: $color-aquamarine; // A color to add zest
+
+// Contrasting Colors (For Text)
+$color-primary-contrast: $color-grey-purple;
+$color-primary-contrast-alt: $color-grey-dark;
+
+$color-secondary-contrast: $color-grey-dark;
+$color-secondary-contrast-alt: $color-white-translucent;
+
+$color-tertiary-contrast: $color-white;
+$color-tertiary-contrast-alt: $color-white-translucent;
+
+$color-action-contrast: $color-white;
+$color-action-contrast-alt: $color-white-translucent;
+
+$color-accent-contrast: $color-white;
+$color-accent-contrast-alt: $color-white-translucent;
 
 // Font
 $font-weight-normal: 400;
 $font-weight-bold: 700;
 
-// Somethign
+// Border
 $border-width: 2px;

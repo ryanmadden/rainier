@@ -1,7 +1,8 @@
 @import 'vars';
 
 body {
-  color: $color-text-primary;
+  color: $color-primary-contrast;
+  background-color: $color-primary;
   font-family: 'Montserrat', 'Helvetica';
   font-weight: $font-weight-normal;
   font-size: 16px;
@@ -24,26 +25,26 @@ body {
 
 }
 
-.text-left { text-align: left; }
-
-.text-center { text-align: center; }
-
-.text-right { text-align: right; }
-
 a {
-  color: $color-text-primary;
+  color: $color-primary-contrast;
   text-decoration: none;
-  border-bottom: 1px dotted $color-text-primary;
-
+  border-bottom: 1px dotted $color-primary-contrast;
+  &:visited {
+    color: darken($color-primary-contrast, 30%);
+    border-bottom: 1px dotted darken($color-primary-contrast, 30%);
+  }
   &:hover {
-    color: $color-text-secondary;
-    text-decoration: none;
-    border-bottom: 1px dotted $color-text-secondary;
+    color: lighten($color-primary-contrast, 30%);
+    border-bottom: 1px dotted lighten($color-primary-contrast, 30%);
+  }
+  &:active {
+    color: lighten($color-primary-contrast, 30%);
+    border-bottom: 1px dotted lighten($color-primary-contrast, 30%);
   }
 }
 
 strong, b {
-  color: $color-text-primary;
+  color: $color-primary-contrast;
   font-weight: $font-weight-bold;
 }
 
@@ -56,7 +57,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $color-text-primary;
+  color: $color-primary-contrast;
   font-weight: $font-weight-bold;
   line-height: 1.2;
   margin: 0 0 1rem 0;
@@ -66,7 +67,7 @@ header {
   h1, h2, h3, h4, h5, h6 {
     + p {
       font-size: 0.9em;
-      color: $color-text-secondary;
+      color: $color-primary-contrast-alt;
     }
   }
 }
@@ -108,7 +109,7 @@ code {
   padding: 0.25em 0.65em;
   font-family: monospace;
   background: $color-secondary;
-  color: $color-text-secondary;
+  color: $color-secondary-contrast;
   border-radius: 4px;
 }
 
@@ -124,8 +125,14 @@ pre {
 hr {
   margin: 2em 0;
   border: 0;
-  border-bottom: 2px solid $color-text-secondary;
+  border-bottom: 2px solid $color-primary-contrast-alt;
   &.strong {
-    border-bottom: 3px solid $color-text-primary;
+    border-bottom: 3px solid $color-primary-contrast;
   }
 }
+
+.text-left { text-align: left; }
+
+.text-center { text-align: center; }
+
+.text-right { text-align: right; }
