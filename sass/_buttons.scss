@@ -15,6 +15,15 @@ button,
   letter-spacing: 1px;  
   text-transform: uppercase;
   min-width: 10em;
+  &.btn-lg {
+    font-size: 1.2em;
+  }
+
+  &.btn-icon:before {
+    margin-right: 0.4em;
+    font-family: FontAwesome;
+  }
+  
   &.btn-default {
     border: 1px solid $color-primary-contrast;
     background-color: $color-primary;
@@ -53,5 +62,11 @@ button,
     &:active {
       background-color: darken($color-action, 5%);
     }
+  }
+
+  &.btn-disabled {
+    pointer: none;
+    opacity: 0.7;
+    pointer-events: none;
   }
 }
