@@ -44,7 +44,6 @@ a:not(.btn) {
 }
 
 strong, b {
-  color: $color-primary-contrast;
   font-weight: $font-weight-bold;
 }
 
@@ -66,7 +65,12 @@ h1, h2, h3, h4, h5, h6 {
 header {
   h1, h2, h3, h4, h5, h6 {
     + p {
-      font-size: 0.9em;
+      color: $color-primary-contrast-alt;
+    }
+
+    > span.subtitle {
+      font-size: 0.7em;
+      font-weight: $font-weight-normal;
       color: $color-primary-contrast-alt;
     }
   }
