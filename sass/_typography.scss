@@ -30,7 +30,7 @@ a:not(.btn) {
   text-decoration: none;
   border-bottom: 1px dotted $color-primary-contrast;
   &:visited {
-    color: darken($color-primary-contrast, 30%);
+    color: $color-primary-contrast;
     border-bottom: 1px dotted darken($color-primary-contrast, 30%);
   }
   &:hover {

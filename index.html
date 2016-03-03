@@ -9,7 +9,7 @@
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
   <link rel="stylesheet" type="text/css" href="css/rainier.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body class="">
   <header class="text-center header-main">
@@ -239,9 +239,14 @@
       <a class="btn btn-action">Action</a>
       <a class="btn icon">Plain</a>
       <pre class="prettyprint"><code>&lt;a class="btn btn-default"&gt;Default&lt;/a&gt;<br>&lt;a class="btn btn-alt"&gt;Alt&lt;/a&gt;<br>&lt;a class="btn btn-action"&gt;Action&lt;/a&gt;<br>&lt;a class="btn"&gt;Plain&lt;/a&gt;<br></code></pre>
-      <a class="btn btn-default btn-lg">Large</a>
-      <a class="btn btn-action btn-icon fa-cloud">Icon</a>
-      <a class="btn btn-alt btn-disabled">Disabled</a>
+      <div class="row">
+        <div class="clm xs-12">
+          <a class="btn btn-default btn-lg">Large</a>
+          <a class="btn btn-action btn-icon fa-cloud">Icon</a>
+          <a class="btn btn-alt btn-disabled">Disabled</a>
+        </div>
+      </div>
+      <p><strong>Note:</strong> Icon buttons in this style require <a href="http://fontawesome.io/" target="_blank">FontAwesome</a>, a library of cool icons avaliable over CDN. It'll run you about 27kb but let's you make cool vector icons, so there's that.</p>
       <pre class="prettyprint"><code>&lt;a class="btn btn-default btn-lg"&gt;Large&lt;/a&gt;<br>&lt;a class="btn btn-action btn-icon fa-cloud"&gt;Icon&lt;/a&gt;<br>&lt;a class="btn btn-alt btn-disabled"&gt;Disabled&lt;/a&gt;</code></pre>
     </div>
   </section>
