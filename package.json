@@ -3,11 +3,14 @@
   "version": "0.0.1",
   "description": "A modular SASS framework for building the web",
   "main": "Gulpfile.js",
-  "dependencies": {
-    "gulp": "~3.9.0",
-    "gulp-sass": "~2.1.1"
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
