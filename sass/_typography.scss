@@ -140,3 +140,13 @@ hr {
 .text-center { text-align: center; }
 
 .text-right { text-align: right; }
+
+.img-r {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-rounded {
+  border-radius: $border-radius;
+}
