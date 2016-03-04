@@ -25,7 +25,7 @@ body {
   line-height: 1.65;
 }
 
-a:not(.btn) {
+a {
   color: $color-primary-contrast;
   text-decoration: none;
   border-bottom: 1px dotted $color-primary-contrast;

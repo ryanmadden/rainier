@@ -10,10 +10,29 @@
   <link rel="stylesheet" type="text/css" href="dist/css/rainier.css">
   <link rel="stylesheet" type="text/css" href="dist/css/styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="src/js/rainier.js"></script>
 </head>
 <body class="">
+  <nav class="navbar">
+    <div class="container-full">
+      <a class="nav-logo" href="#">Rainier</a>
+      <button id="menu-trigger" class="nav-menu">Menu<i class="fa fa-bars nav-icon"></i></button>
+    </div>
+    <div id="menu-slide">
+      <div class="nav-close-wrapper">
+        <button class="nav-btn-close">
+          <i id="menu-close" class="fa fa-times"></i>
+        </button>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="#">Hello</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Goodbye</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Strawberries</a></li>
+      </ul>
+    </div>
+  </nav>
   <header class="text-center header-main">
-    <h1>Rainier <span class="subtitle">[<em>rey</em>-<strong>neer</strong>]</span></h1>
+    <h1>Rainier <span class="subtitle"><nobr>[<em>rey</em>-<strong>neer</strong>]</nobr></span></h1>
     <p><em>noun</em> <strong>1.</strong> A big mountain in Washington state. <strong>2.</strong> A modular Sass framework for building responsive websites.</p>
     <a class="btn btn-action">Download</a>
   </header>
@@ -22,7 +41,7 @@
       <div class="row text-center">
         <div class="clm xs-12 sm-4">
           <i class="fa fa-text-height"></i>
-          <p>Typography based on responsive units.</p>
+          <p>Typography based on relative units.</p>
         </div>
         <div class="clm xs-12 sm-4">
           <i class="fa fa-pencil"></i>
@@ -44,23 +63,22 @@
   <section>
     <div class="container">
       <h3>Breakpoints</h3>
-      <p>Rainier comes standard with five breakpoints:</p>
+      <p>Rainier's media queries are mobile-first, meaning that the default styles are written for the smallest viewports. Media queries are then used to enhance the layout and presentation on larger viewports. Rainier comes standard with four breakpoints:</p>
       <div class="row">
         <div class="clm xs-12 sm-6">
           <ul>
-            <li>Extra Small (xs): Default</li>
-            <li>Small (sm): 48em</li>
-            <li>Medium (md): 62em</li>
+            <li>Small (sm): &ge;48em</li>
+            <li>Medium (md): &ge;62em</li>
           </ul>
         </div>
         <div class="clm xs-12 sm-6">
           <ul>
-            <li>Large (lg): 75em</li>
-            <li>Extra-Large (xl): 87.5em</li>
+            <li>Large (lg): &ge;75em</li>
+            <li>Extra-Large (xl): &ge;87.5em</li>
           </ul>
         </div>
       </div>
-      <p>Breakpoints are sized with relative units to facilitate layout adaptation when a user increases their root font size by manually zooming the page.</p>
+      <p>Viewports skinnier than 48em are considered 'Extra Small (xs)'. Breakpoints are sized with relative units to facilitate layout adaptation when a user increases their root font size by manually zooming the page.</p>
     </div>
   </section>
   <section>
@@ -212,7 +230,7 @@
   <section>
     <div class="container">
       <h3>Typography</h3>
-      <p>Type is based on responsive units, with the <code>html</code> font-size property set at <code>16px</code>. Out of the box, Rainier bumps the font-size of the <code>body</code> element to <code>17px</code> and <code>18px</code> at the large and extra-large breakpoints, respectively.</p>
+      <p>Type is based on relative units, with the <code>html</code> font-size property set at <code>16px</code>. Out of the box, Rainier bumps the font-size of the <code>html</code> element to <code>17px</code> and <code>18px</code> at the large and extra-large breakpoints, respectively.</p>
       <p>Thanks to those responsive units, this scales the type of the entire page on those large displays. If that's not your flavor, you can change the font-size at those breakpoints or delete those rules entirely.</p>
       <h4>Styles</h4>
       <div class="row">
@@ -274,20 +292,20 @@
   <section>
     <div class="container">
       <h3>Buttons</h3>
-      <a class="btn btn-default">Default</a>
-      <a class="btn btn-alt">Alt</a>
-      <a class="btn btn-action">Action</a>
-      <a class="btn icon">Plain</a>
-      <pre class="prettyprint"><code>&lt;a class="btn btn-default"&gt;Default&lt;/a&gt;<br>&lt;a class="btn btn-alt"&gt;Alt&lt;/a&gt;<br>&lt;a class="btn btn-action"&gt;Action&lt;/a&gt;<br>&lt;a class="btn"&gt;Plain&lt;/a&gt;<br></code></pre>
+      <button class="btn btn-default">Default</button>
+      <button class="btn btn-alt">Alt</button>
+      <button class="btn btn-action">Action</button>
+      <button class="btn btn-plain">Plain</button>
+      <pre class="prettyprint"><code>&lt;button class="btn btn-default"&gt;Default&lt;/button&gt;<br>&lt;button class="btn btn-alt"&gt;Alt&lt;/button&gt;<br>&lt;button class="btn btn-action"&gt;Action&lt;/button&gt;<br>&lt;button class="btn btn-plain"&gt;Plain&lt;/button&gt;<br></code></pre>
       <div class="row">
         <div class="clm xs-12">
-          <a class="btn btn-default btn-lg">Large</a>
-          <a class="btn btn-action btn-icon fa-cloud">Icon</a>
-          <a class="btn btn-alt btn-disabled">Disabled</a>
+          <button class="btn btn-default btn-lg">Large</button>
+          <button class="btn btn-action btn-icon fa-cloud">Icon</button>
+          <button class="btn btn-alt btn-disabled">Disabled</button>
         </div>
       </div>
       <p><strong>Note:</strong> Icon buttons in this style require <a href="http://fontawesome.io/" target="_blank">FontAwesome</a>, a library of cool icons avaliable over CDN. It'll run you about 27kb but let's you make cool vector icons, so there's that.</p>
-      <pre class="prettyprint"><code>&lt;a class="btn btn-default btn-lg"&gt;Large&lt;/a&gt;<br>&lt;a class="btn btn-action btn-icon fa-cloud"&gt;Icon&lt;/a&gt;<br>&lt;a class="btn btn-alt btn-disabled"&gt;Disabled&lt;/a&gt;</code></pre>
+      <pre class="prettyprint"><code>&lt;button class="btn btn-default btn-lg"&gt;Large&lt;/button&gt;<br>&lt;button class="btn btn-action btn-icon fa-cloud"&gt;Icon&lt;/button&gt;<br>&lt;button class="btn btn-alt btn-disabled"&gt;Disabled&lt;/button&gt;</code></pre>
     </div>
   </section>
   <section>

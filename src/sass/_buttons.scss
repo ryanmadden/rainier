@@ -2,11 +2,15 @@
 
 input[type="submit"],
 input[type="button"],
-button,
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
 .btn {
   border-radius: $border-radius;
   text-decoration: none;
-  cursor: pointer;
   display: inline-block;
   padding: 0 2.75em;
   text-align: center;
@@ -15,6 +19,7 @@ button,
   letter-spacing: 1px;  
   text-transform: uppercase;
   min-width: 10em;
+
   &.btn-lg {
     font-size: 1.2em;
   }
@@ -62,6 +67,11 @@ button,
     &:active {
       background-color: darken($color-action, 5%);
     }
+  }
+
+  &.btn-plain {
+    background-color: transparent;
+    border: none;
   }
 
   &.btn-disabled {
