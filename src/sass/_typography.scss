@@ -25,6 +25,17 @@ body {
   line-height: 1.65;
 }
 
+section {
+  margin-bottom: 2em;
+
+  &:before {
+  content:"";
+  display:block;
+  height:4em; /* fixed header height*/
+  margin:-4em 0 0; /* negative fixed header height */
+}
+}
+
 a {
   color: $color-primary-contrast;
   text-decoration: none;

@@ -26,6 +26,10 @@
     margin-top: 0.2em;
     float: right;
 
+    &:hover {
+      color: $color-accent-contrast-alt;
+    }
+
     .nav-icon {
       margin-left: 0.5em;
     }
@@ -51,6 +55,10 @@
 
   .nav-btn-close {
     font-size: 2em;
+
+    &:hover {
+      color: $color-accent-contrast-alt;
+    }
   }
 
   .nav-list {
