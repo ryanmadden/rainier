@@ -16,11 +16,10 @@ html {
 }
 
 body {
-  color: $color-primary-contrast;
   background-color: $color-primary;
+  color: $color-primary-contrast;
   font-family: 'Montserrat', 'Helvetica';
   font-weight: $font-weight-normal;
-  font-weight: 400;
   line-height: 1.65;
 }
 
@@ -28,28 +27,29 @@ section {
   margin-bottom: 2em;
 
   &:before {
-  content:"";
-  display:block;
-  height:4em; /* fixed header height*/
-  margin:-4em 0 0; /* negative fixed header height */
-}
+    // Invisible section padding to move #id link targets below navbar
+    content: "";
+    display: block;
+    height: 4em;
+    margin: -4em 0 0;
+  }
 }
 
 a {
+  border-bottom: 1px dotted $color-primary-contrast;
   color: $color-primary-contrast;
   text-decoration: none;
-  border-bottom: 1px dotted $color-primary-contrast;
   &:visited {
-    color: $color-primary-contrast;
     border-bottom: 1px dotted darken($color-primary-contrast, 30%);
+    color: $color-primary-contrast;
   }
   &:hover {
-    color: lighten($color-primary-contrast, 30%);
     border-bottom: 1px dotted lighten($color-primary-contrast, 30%);
+    color: lighten($color-primary-contrast, 30%);
   }
   &:active {
-    color: lighten($color-primary-contrast, 30%);
     border-bottom: 1px dotted lighten($color-primary-contrast, 30%);
+    color: lighten($color-primary-contrast, 30%);
   }
 }
 
@@ -66,10 +66,10 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1rem 0;
   color: $color-primary-contrast;
   font-weight: $font-weight-bold;
   line-height: 1.2;
-  margin: 0 0 1rem 0;
 }
 
 header {
@@ -79,9 +79,9 @@ header {
     }
 
     > span.subtitle {
+      color: $color-primary-contrast-alt;
       font-size: 0.7em;
       font-weight: $font-weight-normal;
-      color: $color-primary-contrast-alt;
     }
   }
 }
@@ -111,34 +111,34 @@ h6 {
 }
 
 blockquote {
-  border-left: 5px solid #eee;
-  font-style: italic;
   margin: 0 0 1em 0;
   padding: 0 0 0 1em;
+  border-left: 5px solid #eee;
+  font-style: italic;
 }
 
 code {
-  font-size: 0.9em;
   margin: 0 0.25em;
   padding: 0.25em 0.65em;
-  font-family: monospace;
+  border-radius: $border-radius;
   background: $color-secondary;
   color: $color-secondary-contrast;
-  border-radius: $border-radius;
+  font-family: monospace;
+  font-size: 0.9em;
 }
 
 pre {
   code {
     display: block;
-    line-height: 1.75em;
     padding: 1em 1.5em;
     overflow-x: auto;
+    line-height: 1.75em;
   }
 }
 
 hr {
   margin: 2em 0;
-  border: 0;
+  border: none;
   border-bottom: 2px solid $color-primary-contrast-alt;
   &.strong {
     border-bottom: 3px solid $color-primary-contrast;

@@ -3,22 +3,22 @@
 input[type="submit"],
 input[type="button"],
 button {
-  cursor: pointer;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .btn {
-  border-radius: $border-radius;
-  text-decoration: none;
   display: inline-block;
   padding: 0 2.75em;
-  text-align: center;
-  line-height: 3em;
-  font-size: 0.8em;
-  letter-spacing: 1px;  
-  text-transform: uppercase;
   min-width: 10em;
+  border-radius: $border-radius;
+  font-size: 0.8em;
+  letter-spacing: 1px; 
+  line-height: 3em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
 
   &.btn-lg {
     font-size: 1.2em;
@@ -30,8 +30,8 @@ button {
   }
   
   &.btn-default {
-    border: 1px solid $color-primary-contrast;
     background-color: $color-primary;
+    border: 1px solid $color-primary-contrast;
     color: $color-primary-contrast;
     &:hover {
       border: 1px solid lighten($color-primary-contrast, 30%);
@@ -44,8 +44,8 @@ button {
   }
 
   &.btn-alt {
-    border: none;
     background-color: $color-primary-contrast;
+    border: none;
     color: $color-primary;
     &:hover {
       background-color: lighten($color-primary-contrast, 5%);
@@ -57,8 +57,8 @@ button {
   }
 
   &.btn-action {
-    border: none;
     background-color: $color-action;
+    border: none;
     color: $color-action-contrast;
     &:hover {
       background-color: lighten($color-action, 5%);
