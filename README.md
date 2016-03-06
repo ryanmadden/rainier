@@ -22,7 +22,7 @@ Simply include `rainier.min.css` and `rainier.min.js` in your HTML or template.
 
 ## Development
 Rainier is built to be modified and extended. To get started with modifying it for your project:
-- Download the latest release
+- [Download the latest release](https://github.com/ryanmadden/rainier/releases/download/v0.1.0/rainier.zip)
 - Move `rainier/` into to your project
 - Navigate to the `rainier/` directory
 - If you haven't installed Gulp, run `npm install --global gulp-cli`
