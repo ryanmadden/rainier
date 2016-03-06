@@ -13,6 +13,11 @@
       closeMenu();
     };
 
+    var menuOverlay = document.getElementById('menu-overlay');
+    menuOverlay.onclick = function(){
+      closeMenu();
+    };
+
     var navLinks = document.getElementsByClassName('nav-link');
     for (var i = navLinks.length - 1; i >= 0; i--) {
       navLinks[i].onclick = function() {
