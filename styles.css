@@ -1,0 +1,47 @@
+.container {
+  max-width: 800px;
+}
+
+.header-main {
+  max-width: 500px;
+  margin: 9rem auto 4rem auto;
+}
+
+.value-prop i {
+  font-size: 6em;
+}
+
+.colorful {
+  background-color: rgb(238, 238, 238);;
+  color: rgb(78, 72, 82);
+  width: 100%;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+
+.colorful > p {
+  margin-bottom: 0;
+  padding: 2px 0 2px 0;
+}
+
+h1 > code, 
+h2 > code, 
+h3 > code, 
+h4 > code, 
+h5 > code, 
+h6 > code {
+  font-size: 16px; 
+}
+
+pre.prettyprint {
+  border: none; 
+}
+
+ol, ul {
+  margin-top: 0;
+}
+
+ol, ul > hr {
+  margin: 0 0 0.5em 0;
+}
