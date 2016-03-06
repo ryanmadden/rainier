@@ -18,7 +18,7 @@ gulp.task('sass', function () {
     cascade: false
   }))
   .pipe(sourcemaps.write('./'))
-  .pipe(gulp.dest('./test/'))
+  .pipe(gulp.dest('./dev/'))
 });
 
 // JS Development
@@ -26,7 +26,7 @@ gulp.task('scripts', function() {
   gulp.src('./src/js/*.js')
   .pipe(concat('rainier.js'))
   .pipe(uglify())
-  .pipe(gulp.dest('./test/'));
+  .pipe(gulp.dest('./dev/'));
 });
 
 // Dev Watch Task
