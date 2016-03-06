@@ -5,16 +5,16 @@ $color-white-translucent: rgba(255, 255, 255, 0.7);
 $color-grey-purple: rgb(78, 72, 82);
 $color-grey-dark: rgb(142, 136, 146);
 $color-grey-light: rgb(238, 238, 238);
-$color-orange-action: rgb(237, 73, 51);
+$color-red-action: rgb(219, 47, 41);
 $color-purple-blue: rgb(80, 83, 147);
-$color-aquamarine: rgb(33, 178, 166);
+$color-coral: rgb(149, 184, 209);
 
 // Theme Colors
 $color-primary: $color-white; // The main background color
 $color-secondary: $color-grey-light; // The secondary background color
 $color-tertiary: $color-purple-blue; // The tertiary background color
-$color-action: $color-orange-action; // A color to capture attention
-$color-accent: $color-aquamarine; // A color to add zest
+$color-action: #DB504A; // A color to capture attention
+$color-accent: $color-coral; // A color to add zest
 
 // Contrasting Colors (For Text)
 $color-primary-contrast: $color-grey-purple;
