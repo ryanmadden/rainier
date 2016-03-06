@@ -1,3 +1,9 @@
+// Breakpoints
+$break-sm: 48em;
+$break-md: 62em;
+$break-lg: 75em;
+$break-xl: 87.5em;
+
 // Utility Colors
 $color-white: rgb(255, 255, 255);
 $color-off-white: #FBFBFB;
@@ -13,7 +19,7 @@ $color-coral: rgb(149, 184, 209);
 $color-primary: $color-white; // The main background color
 $color-secondary: $color-grey-light; // The secondary background color
 $color-tertiary: $color-purple-blue; // The tertiary background color
-$color-action: #DB504A; // A color to capture attention
+$color-action: $color-red-action; // A color to capture attention
 $color-accent: $color-coral; // A color to add zest
 
 // Contrasting Colors (For Text)

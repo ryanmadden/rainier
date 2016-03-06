@@ -1,17 +1,16 @@
 @import 'vars';
 
 html {
-  // TODO replace media queries with mixins
-  @media (min-width: 48em) {
+  @media (min-width: $break-sm) {
     font-size: 16px;
   }
-  @media (min-width: 62em) {
+  @media (min-width: $break-md) {
     font-size: 16px;
   }
-  @media (min-width: 75em) {
+  @media (min-width: $break-lg) {
     font-size: 17px;
   }
-  @media (min-width: 87.5em) {
+  @media (min-width: $break-xl) {
     font-size: 18px;
   }
 }

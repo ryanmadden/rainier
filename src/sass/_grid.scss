@@ -6,23 +6,22 @@
   padding-right: 15px;
 }
 
-// TODO replace media queries with mixins
-@media (min-width: 48rem) {
+@media (min-width: $breeak-sm) {
   .container {
     width: 45rem;
   }
 }
-@media (min-width: 62rem) {
+@media (min-width: $break-md) {
   .container {
     width: 59rem;
   }
 }
-@media (min-width: 75rem) {
+@media (min-width: $break-lg) {
   .container {
     width: 72rem;
   }
 }
-@media (min-width: 87.5rem) {
+@media (min-width: $break-xl) {
   .container {
     width: 84rem;
   }
@@ -81,7 +80,7 @@
 .xs-11 { width: 91.6667%; }
 .xs-12 { width: 100%; }
 
-@media (min-width: 48rem) {
+@media (min-width: $break-sm) {
   .sm-1,
   .sm-2,
   .sm-3,
@@ -125,7 +124,7 @@
 
 }
 
-@media (min-width: 62rem) {
+@media (min-width: $break-md) {
   .md-1,
   .md-2,
   .md-3,
@@ -156,7 +155,7 @@
   .md-12 { width: 100%; }
 }
 
-@media (min-width: 75rem) {
+@media (min-width: $break-lg) {
   .lg-1,
   .lg-2,
   .lg-3,
@@ -187,7 +186,7 @@
   .lg-12 { width: 100%; }
 }
 
-@media (min-width: 87.5rem) {
+@media (min-width: $break-xl) {
   .xl-1,
   .xl-2,
   .xl-3,
