@@ -1,7 +1,8 @@
 {
   "name": "rainier",
-  "version": "0.0.1",
-  "description": "A modular SASS framework for building the web",
+  "version": "0.1.0",
+  "description": "A lightweight, modular Sass framework for building the responsive web",
+  "author": "Ryan Madden",
   "main": "Gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -20,7 +21,6 @@
     "type": "git",
     "url": "https://github.com/ryanmadden/rainier.git"
   },
-  "author": "Ryan Madden",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ryanmadden/rainier/issues"
