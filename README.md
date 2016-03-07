@@ -18,7 +18,7 @@ Simply include `rainier.min.css` and `rainier.min.js` in your HTML or template.
 
 `<link rel="stylesheet" type="text/css" href="rainier.min.css">`
 
-`<script src="rainier.js"></script>`
+`<script src="rainier.min.js"></script>`
 
 ## Development
 Rainier is built to be modified and extended. To get started with modifying it for your project:
