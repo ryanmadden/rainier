@@ -2,17 +2,14 @@
 
 (function(window){
 
-  window.onload = function() {
-    var downloadButton = document.getElementById('btn-download');  
-    downloadButton.onclick = function(){
-      ga('send', 'event', 'Button', 'download', 'Main Download');
-    };
+  var downloadButton = document.getElementById('btn-download');  
+  downloadButton.addEventListener('click',function(){
+   ga('send', 'event', 'Button', 'download', 'Main Download');
+ },false);
 
-    var downloadLink = document.getElementById('link-download');  
-    downloadLink.onclick = function(){
-      ga('send', 'event', 'Link', 'download', 'Nav Download');
-    };
-
-  };
+  var downloadLink = document.getElementById('link-download');  
+  downloadLink.addEventListener('click',function(){
+   ga('send', 'event', 'Link', 'download', 'Nav Download');
+ },false);
 
 })(this);
