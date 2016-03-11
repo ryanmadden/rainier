@@ -8,8 +8,18 @@
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
   <link rel="stylesheet" type="text/css" href="dist/rainier.min.css">
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54337608-2', 'auto');
+  ga('send', 'pageview');
+
+  </script>
 </head>
 <body class="">
   <nav class="navbar">
@@ -24,7 +34,7 @@
         </button>
       </div>
       <ul class="nav-list">
-        <li class="nav-item"><a class="nav-link" href="https://github.com/ryanmadden/rainier/releases/download/v0.1.0/rainier.zip">Download</a></li>
+        <li class="nav-item"><a class="nav-link" id="link-download" href="https://github.com/ryanmadden/rainier/releases/download/v0.1.0/rainier.zip">Download</a></li>
         <hr>
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#breakpoints">Breakpoints</a></li>
@@ -43,7 +53,7 @@
     <div class="container text-center header-main">
       <h1>Rainier <span class="subtitle"><nobr>[<em>rey</em>-<strong>neer</strong>]</nobr></span></h1>
       <p><em>noun</em> <strong>1.</strong> A big mountain in Washington state. <strong>2.</strong> A modular Sass framework for building responsive websites.</p>
-      <a class="btn btn-action" href="https://github.com/ryanmadden/rainier/releases/download/v0.1.0/rainier.zip">Download</a>
+      <a class="btn btn-action" id="btn-download" href="https://github.com/ryanmadden/rainier/releases/download/v0.1.0/rainier.zip">Download</a>
     </div>
   </header>
   <section class="value-prop">
@@ -448,6 +458,7 @@
     </div>
   </footer>
   <script src="dist/rainier.min.js"></script>
+  <script src="assets/scripts.js"></script>
   <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 </body>
 </html>
