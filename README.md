@@ -1,4 +1,5 @@
 # Rainier
+### [Demo](http://ryanmadden.net/rainier)
 Rainier is a lightweight Sass framework for building the responsive web. It's modular and comes with basic styles (grid, typography, buttons, etc.) but it's built to be extended and modified. It has typography based on relative units and it isn't bloated with clunky JavaScript components you'll never use.
 
 You can see demos of Rainier's styles and components [here](http://ryanmadden.net/rainier).
